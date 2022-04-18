@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { TokenService } from '../shared/token.service';
 
 // User interface
 export class User {
@@ -14,7 +16,9 @@ export class User {
   providedIn: 'root',
 })
 export class AuthService {
-  constructor(private http: HttpClient) {}
+  role:any;
+  constructor(private http: HttpClient, private token:TokenService) {
+  }
 
   // User registration
   register(user: User): Observable<any> {
@@ -23,11 +27,22 @@ export class AuthService {
 
   // Login
   signin(user: User): Observable<any> {
-    return this.http.post<any>('http://127.0.0.1:8000/api/auth/login', user);
+    return this.http.post<any>('http://127.0.0.1:8000/api/auth/login', user)
+   
   }
 
   // Access user profile
   profileUser(): Observable<any> {
     return this.http.get('http://127.0.0.1:8000/api/auth/user-profile');
   }
+
+  // Set Role
+  setRole(role:any){
+    this.role=role;
+  }
+
+  GetRole(){
+    return this.role;
+  }
+
 }
