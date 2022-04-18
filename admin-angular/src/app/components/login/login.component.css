@@ -1,0 +1,12 @@
+.container{
+    padding-top: 10rem;
+}
+.card{
+    width: 30%;
+}
+.card-body{
+    padding: 2rem 0rem;
+}
+.main-text{
+    font-family: sans-serif;
+}

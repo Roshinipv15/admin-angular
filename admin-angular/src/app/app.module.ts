@@ -12,6 +12,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AuthInterceptor } from './shared/auth.interceptor';
+import { LoginComponent } from './components/login/login.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { AuthInterceptor } from './shared/auth.interceptor';
     SigninComponent,
     SignupComponent,
     UserProfileComponent,
+    LoginComponent,
+    SidebarComponent,
+    HeaderComponent,
+    AdminPanelComponent,
   ],
   imports: [
     BrowserModule,
