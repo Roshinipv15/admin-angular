@@ -30,14 +30,6 @@ hr{
     margin-right: -40px;
     margin-top: 13px;
 }
-.custom-line
-{
-    border:0.5px solid white;
-    height: 1px;
-    width: 20%;
-    margin-top: -17px;
-    position: fixed;
-}
 .custom-header-text 
 {
     margin-right: 38%;

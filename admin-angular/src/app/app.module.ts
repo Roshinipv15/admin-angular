@@ -16,6 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AdminPanelComponent } from './components/admin-panel/admin-panel.compon
     SidebarComponent,
     HeaderComponent,
     AdminPanelComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
