@@ -5,11 +5,18 @@
   }
 }
 .logo {
-  text-align: center;
-  padding: 2.6rem 1rem;
+  // text-align: center;
+  // padding: 2.6rem 1rem;
+  padding: 0.2rem 0rem 0.6rem 0rem;
   img {
-    width: 200px;
+    // width: 100px;
+    width: 37%;
   }
+}
+.logo-text {
+  font-size: 17px;
+  color: #F7F7F7;
+  font-weight: 700;
 }
 .mat-divider {
   border-top-width: 2px;
