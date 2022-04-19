@@ -14,6 +14,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { LoginComponent } from './login/login.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { RegisterComponent } from './register/register.component';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     DashboardComponent,
     SidenavComponent,
+    LoginComponent,
+    SidebarComponent,
+    RegisterComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,
