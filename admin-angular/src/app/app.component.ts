@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'admin-panel-layout';
  
+  public customToolbar: object ={
+    items: [ 'Bold', 'Italic', 'Undo', 'Redo']
+  };
 }

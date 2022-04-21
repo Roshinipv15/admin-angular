@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RegisterComponent } from './register/register.component';
 import { CreateComponent } from './create/create.component';
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 
 @NgModule({
   declarations: [
@@ -42,8 +43,9 @@ import { CreateComponent } from './create/create.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    RichTextEditorModule
   ],
-  providers: [],
+  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
